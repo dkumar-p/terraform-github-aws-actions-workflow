@@ -46,7 +46,7 @@ jobs:
         env:
           OUTPUT: "${{ steps.output.outputs.stdout }}"
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUBACTIONS }}
           script: |
             const output = `#### Preview Environment Outputs 🖌
             \`\`\`
